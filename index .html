@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Study 4 Telegram Bot</title>
+  <meta name="description" content="Join Study 4 Telegram Bot for UPSC, NEET, Railway notes, quizzes, VIP PDFs, and more!" />
+  <meta name="keywords" content="Telegram Bot, Study, UPSC, NEET, Railway, Notes, PDF, Study Material" />
+  <meta name="author" content="vk1477562" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(to right, #dfe9f3, #ffffff);
+      color: #333;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 0.5em;
+      color: #2b5876;
+    }
+
+    p {
+      font-size: 1.1em;
+      margin-bottom: 2em;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 30px;
+      margin: 10px;
+      font-size: 1.1em;
+      color: #fff;
+      background: transparent;
+      border: 2px solid #2b5876;
+      border-radius: 40px;
+      cursor: pointer;
+      position: relative;
+      transition: all 0.3s ease-in-out;
+      overflow: hidden;
+    }
+
+    .btn::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 0; height: 100%;
+      background: #2b5876;
+      z-index: -1;
+      transition: 0.4s ease;
+    }
+
+    .btn:hover::before {
+      width: 100%;
+    }
+
+    .btn:hover {
+      color: #fff;
+      box-shadow: 0 0 10px #2b5876;
+    }
+
+    footer {
+      margin-top: 3em;
+      font-size: 0.9em;
+      color: #666;
+    }
+
+    @media(max-width: 600px) {
+      h1 { font-size: 1.8em; }
+      .btn { padding: 12px 20px; font-size: 1em; }
+    }
+  </style>
+
+  <script>
+    function openTelegramBot() {
+      const botToken = "8208225445:AAHjAkkvcbUqcMkwId63IB-4QMePaauPNpo";
+      const botUsername = "study_4_bot";
+      const telegramUrl = `https://t.me/${botUsername}`;
+      window.open(telegramUrl, "_blank");
+    }
+  </script>
+</head>
+
+<body>
+  <h1>📚 Study 4 Telegram Bot</h1>
+  <p>Start your journey with our smart Telegram Bot for UPSC, NEET, and Railway preparation.<br>Join now and get FREE Notes, Quizzes & VIP PDFs!</p>
+
+  <button class="btn" onclick="openTelegramBot()">🔗 Join Bot Now</button>
+
+  <footer>
+    &copy; 2025 Study 4 Bot | Developed by @vk1477562
+  </footer>
+</body>
+</html>
